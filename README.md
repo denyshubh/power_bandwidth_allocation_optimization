@@ -11,7 +11,7 @@ There are two termination conditions for the algorithm:
 
 2. Reaching 𝑛𝑚𝑖𝑛 generations and having an improvement of less than threshold between two consecutive solutions in the last three generations. This convergence criteria is needed so the algorithm is unbiased in determining when to stop in different demand scenarios. Moreover, there are cases in which the USC might increase slightly and decrease in the following generation, so a window of three generations is a better approach than just considering the difference between two generations. Furthermore, a minimum number of generations 𝑛𝑚𝑖𝑛 should be set to help the algorithm reach better solutions.
 
-<img src="genetic-algo-table.png">
+<img src="Images/genetic-algo-table.png">
 
 
 ```python
