@@ -51,12 +51,14 @@ def evaluate(ind):
     return USC(𝑠𝑎𝑡)
 ```
 
+The creator is a class factory that can build new classes at run-time. It will be called with first the desired name of the new class, second the base class it will inherit, and in addition any subsequent arguments you want to become attributes of your class. This allows us to build new and complex structures of any type of container from lists to n-ary trees.
 
 ```python
 Nind = 400 # Population Size
 creator.create("FitnessMin", base.Fitness, weights=(-1.0, -1.0))
 creator.create("Individual", list, fitness=creator.FitnessMin)
 
+# Now we will use our custom classes to create types representing our individuals as well as our whole population.
 toolbox = base.Toolbox()
 
 # (p, b) allocations of power and bandwidth to every beam in the satellite)
